@@ -10,27 +10,17 @@ public class OngQuilometro {
         int combustivel;
 
 
-        Scanner leitor = new Scanner(System.in);
-
-        System.out.println("");
-
-        System.out.println("Informe quilometragem inicial: ");
-        kminicial = leitor.nextDouble();
-        System.out.println("Quilometragem no painel: "+kminicial);
-
-        System.out.println("");
-
-        System.out.println("Informe em quilometros a distancia percorrida até o posto: ");
-        distanciaposto = leitor.nextDouble();
-        System.out.println("VOCÊ PERCORREU: "+distanciaposto+" Até o posto de gasolina");
-
-        System.out.println(distanciaposto);
-
-        System.out.println("");
-
-        System.out.println("Quantos litros deseja abastecer?");
-        combustivel = leitor.nextInt();
-        System.out.println("Foram abastecidos: "+ combustivel);
+        Scanner leitor=new Scanner(System.in);
+        float kmIni,kmFim,litros,media;
+        System.out.println("Encontre a autonomia médio do seu veículo");
+        System.out.println("Digite a KM indicada no painel do veículo - início da viagem");
+        kmIni=leitor.nextFloat();
+        System.out.println("Digite a KM indicada no painel do veículo - fim da viagem");
+        kmFim=leitor.nextFloat();
+        System.out.println("Digite a qtde de litros de combustível");
+        litros=leitor.nextFloat();
+        media=(kmFim-kmIni)/litros;
+        System.out.println("Este veículo faz em média " + media + "km/l");
 
 
 
