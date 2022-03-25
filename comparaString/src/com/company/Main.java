@@ -17,7 +17,13 @@ public class Main {
         System.out.println("Resultado do 1º teste com o .contentEquals:");
         System.out.println(nomeJedi1.contentEquals("Luke SKYWALKER"));
         System.out.println("Resultado do 2º teste com o .contentEquals:");
-        System.out.println(nomeJedi1.contentEquals("");
+        System.out.println(nomeJedi1.contentEquals(""));
+
+
+
+
+
+        
 
     }
 }
